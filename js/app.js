@@ -1,76 +1,7 @@
 
-// async function fetchProducts() {
-//     try {
-//       const response = await fetch("http://localhost:3000/products");
-//       const products = await response.json();
-  
-      
-//       const productsContainer = document.getElementById("products");
-  
-
-//       productsContainer.innerHTML = products
-//         .map(
-//           (product) => `
-//           <div style="border: 1px solid #ddd; padding: 10px; margin: 10px; width: 200px;">
-//             <img src="${product.image}" alt="${product.name}" style="width:100%; height:150px; object-fit:cover;">
-//             <h3>${product.name}</h3>
-//             <p>${product.info}</p>
-//             <p><strong>Price:</strong> $${product.price}</p>
-//           </div>
-          
-//         `
-//         )
-//         .join("");
-//     } catch (error) {
-//       console.log("Error",error);
-//     }
-//   }
-  
-//   fetchProducts();
-
-
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const productForm = document.getElementById('productForm');
-//   const openModalBtn = document.getElementById('openModalBtn');
-//   const productModal = new bootstrap.Modal(document.getElementById('productModal'));
-
-//   openModalBtn.addEventListener('click', () => {
-//       productModal.show();
-//   });
-
-//   productForm.addEventListener('submit', (e) => {
-//       e.preventDefault();
-//       const productName = document.getElementById('productName').value;
-//       const productInfo = document.getElementById('productInfo').value;
-//       const productPrice = document.getElementById('productPrice').value;
-//       const imageUrl = document.getElementById('imageUrl').value;
-//       let Elwrap = document.querySelector(".wrap");
-
-// let mewimg = document.createElement("img");
-// mewimg.src = product.img; 
-// Elwrap.appendChild(mewimg); 
-
-
-
-//       console.log('Product Name:', productName);
-//       console.log('Product Info:', productInfo);
-//       console.log('Product Price:', productPrice);
-//       console.log('Image URL:', imageUrl);
-
-//       alert('Product added successfully!');
-//       productForm.reset();
-//       productModal.hide();
-//   });
-// });
-
-
-
 async function fetchProducts() {
   try {
-      const response = await fetch("http://localhost:3000/products");
+      const response = await fetch("https://fakestoreapi.com/products");
       const products = await response.json();
 
       const productsContainer = document.getElementById("products");
