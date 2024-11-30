@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><span class="navbar-brand">Logo</span></li>
+                    <li class="nav-item"><a href="../sahifa/pradact.html" class="nav-link text-white">Products</a></li>
+                    <li class="nav-item"><a href="../sahifa/category.html" class="nav-link text-white">Category</a></li>
+                    <li class="nav-item"><a href="../sahifa/profile.html" class="nav-link text-white">Profile</a></li>
+                    <li class="nav-item"><a href="../sahifa/favourite.html" class="nav-link text-white">Favourites</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Categories</h1>
+        <div class="input-section d-flex gap-2 my-4">
+            <input type="text" id="categoryInput" class="form-control" placeholder="Enter new category name">
+            <button onclick="addCategory()" class="btn btn-success">Add Category</button>
+        </div>
+        <ul id="categoryList" class="list-group"></ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="../js/main.js"></script>
+</body>
+
+</html>
